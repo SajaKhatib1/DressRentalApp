@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo" />
+
+        <EditText
+            android:id="@+id/searchEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ابحث باسم الفستان أو لونه"
+            android:layout_marginTop="16dp" />
+
+        <Spinner
+            android:id="@+id/categorySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:minHeight="48dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="مدة الإيجار:"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp" />
+
+        <RadioGroup
+            android:id="@+id/durationGroup"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="يوم" />
+
+            <RadioButton
+                android:id="@+id/radioTwoDays"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="يومين" />
+
+            <RadioButton
+                android:id="@+id/radioWeek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="أسبوع" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الخدمات الإضافية:"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp" />
+
+        <CheckBox
+            android:id="@+id/checkDelivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="توصيل للمكان" />
+
+        <CheckBox
+            android:id="@+id/checkClean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تنظيف بعد الاستخدام" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="عرض فقط الفساتين الجديدة؟"
+            android:layout_marginTop="16dp" />
+
+        <CheckBox
+            android:id="@+id/newOnlyCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="فقط الجديدة" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="فقط الجديدة"
+            android:padding="12dp"
+            android:minHeight="48dp"
+            android:minWidth="80dp" />
+
+        <Button
+            android:id="@+id/searchButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="بحث"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@android:color/holo_purple"
+            android:textColor="#FFF" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">متجر تأجير فساتين</string>
+
+    <string-array name="dress_categories">
+        <item>الكل</item>
+        <item>زفاف</item>
+        <item>سهرة</item>
+        <item>خطوبة</item>
+    </string-array>
+
+    <string name="remaining">متبقي: %d قطع</string>
+</resources>
